@@ -6,13 +6,14 @@ public class Predmet {
             System.out.println("Povrsina predmeta");
         }
 
-    @Override                       //metoda toString dolazi iz nad klase mama klase Object
+    @Override                       //metoda toString dolazi iz nad klase - mama klase Object
     public String toString() {
         return "Predmet{" +
                 "x=" + x +
                 ", y=" + y +
                 '}';
     }
+
 }
 
 

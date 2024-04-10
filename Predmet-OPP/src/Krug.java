@@ -3,7 +3,7 @@ import java.text.DecimalFormat;
 public class Krug extends Predmet {
 
     private double r;               //samo nam treba za krug r-poluprecnik
-    private final static double PI = Math.PI;    //final- ne menja se vise nigde u programu, constante su uglavnom static,
+    private final static double PI = Math.PI;    //final- ne menja se vise nigde u programu,i constante su uglavnom static,
 
     //overloading - polimorfizam (dve metode u jednoj klasi imaju isto ime)
     public void povrsina(double r ){        //ovde nam trazi da unesemo r    //r = lokalna promenljiva
