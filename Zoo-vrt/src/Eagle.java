@@ -8,3 +8,5 @@ public class Eagle extends Bird{
         System.out.println("Flapping wings eagle...");
     }
 }
+
+//eagle vidi interfejs zato sto je njegova nad klasa Bird

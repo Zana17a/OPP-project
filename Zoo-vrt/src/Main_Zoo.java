@@ -19,8 +19,10 @@ public class Main_Zoo {
 
         eagle.move();  //posto nema svoju metodu move, uzima onu iz Bird // ovaj objekat iz klase Bird
         eagle1.move();  // ovaj eagle1 objekat iz klase Eagle
+        eagle.fly();   ///eagle vidi interfejs  i njegovu metodu fly zato sto je njegova nadklasa Bird
 
         tiger.move();  //move je prazan u lasi Tiger pa nista ne ispisuje
+        cat.eat();
 
         moveAnimals(bird);
 
@@ -33,10 +35,17 @@ public class Main_Zoo {
 //       tiger.move();
 
         moveAnimals1(animals);  //sada nudi dve metode, dali da ubacim niz ili jednu zivotinju
-    }
 
-    //        moveAnimals(); kako sa ovom metodom da ispisemo ovaj ispis kao za for
-    public static void moveAnimals1(Animal[] animals) {          //ovo napravljeni gore kao i moveAnimal samo ovde da vidim lepse
+//        Flyable flyingBird= new Flyable(); // ne moze Objekat interfejsa , kao i od abstraksne klase sto ne moze, samo moze tip podatka
+
+        Flyable flyingBird= new Bird("pigeon",15,"M",2);
+        flyingBird.fly();  // ispise Flying around...metodu iz Bird
+
+        }
+
+
+    //        moveAnimals(); kako sa ovom metodom da ispisemo ovaj ispis kao za for petlju
+    public static void moveAnimals1(Animal[] animals) {          //ovo napraviti gore kao i moveAnimal samo ovde da vidim lepse
         for (int i = 0; i < animals.length; i++) { animals[i].move();}
     }
 
